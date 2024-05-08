@@ -1,0 +1,187 @@
+
+html * {
+  line-height: 1.625; font-family: "Raleway", sans-serif; font-optical-sizing: auto;
+  text-decoration: none; color: white;   
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  animation: zoomInOut 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  margin-top: -45%;
+  padding: 5%;
+  text-shadow: 5px 5px 5px palevioletred; 
+}
+
+.hello{
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 15%;
+  margin: auto;
+}
+
+.iam{
+  font-size: 99px;
+  font-weight: 900;
+  padding-left: 10%;
+  padding-bottom: auto;
+  margin: auto;
+  z-index: 10;
+}
+
+.description{
+  font-size: 28px;
+  font-weight: 500;
+  margin-left: 71%;
+  margin-top: -32%;
+}
+
+.floating-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12.5%;
+  margin-bottom: 0%;
+  z-index: 2;
+  padding-bottom: 0;
+  animation: zoomInOu 20s ease-in-out infinite alternate;
+}
+@keyframes zoomInOu {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 2%;
+  margin-left: 4%;
+  border: 1px solid white;
+  padding: 10px;
+  transition: 0.51s;
+}
+.logo:hover{
+  transform: scale(1.2);   
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cornerstufftr {
+  display: flex; margin-right: 4%;
+  transition: 0.5s;
+}
+.cornerstufftr:hover{
+  transform: scale(1.2);
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;    
+
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2%;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: start;
+  margin: auto;
+  padding: auto;
+}
+
+.cornerstuffbl {
+  display: flex; margin-left: 4%;
+  font-size: 24px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.cornerstuffbl:hover{
+  transform: scale(1.2);
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+.cornerstuffbr {
+  display: flex; margin-right: 4%;
+  font-size: 24px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.cornerstuffbr:hover{
+  transform: scale(1.2);
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+.arrowr {
+  border-right: 1px solid white;
+  margin: auto;
+}
+
+.arrowr:hover{
+  border: 1px solid white;
+  margin-bottom: 2%;
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+.arrowl {
+  border-left: 0px solid white;
+  margin: auto;
+}
+
+.arrowl:hover{
+  border: 1px solid white;
+  margin-bottom: 2%;
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+.popelements{
+  transition: 0.3s;
+}
+.popelements:hover{
+  transform: scale(1.2);
+  text-shadow: 0 0 5px palevioletred; 
+}
+
+.footer-menu {
+  justify-content: space-between;
+  flex-direction: row;
+}
