@@ -25,8 +25,9 @@ html * {
 .hero{
   display: flex;
   justify-content: center;
-  margin-top: -45%;
+  /* margin-top: -45%; */
   padding: 5%;
+  z-index: 100;
   text-shadow: 5px 5px 5px palevioletred; 
 }
 
@@ -44,6 +45,12 @@ html * {
   padding-bottom: auto;
   margin: auto;
   z-index: 10;
+  transition: transform 0.5s ease-in-out;
+}
+.iam:hover {
+  transform: scale(0.9);
+  text-shadow: 5px 5px 5px rgb(235, 69, 124); 
+
 }
 
 .description{
@@ -57,9 +64,10 @@ html * {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -12.5%;
+  position: relative;
+  margin-top: -55%;
   margin-bottom: 0%;
-  z-index: 2;
+  z-index: -1;
   padding-bottom: 0;
   animation: zoomInOu 20s ease-in-out infinite alternate;
 }
@@ -106,27 +114,21 @@ header {
 
 footer {
   display: flex; 
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;    
-
+  margin-top: -6%;
 }
 
 footer nav {
   display: flex;
   justify-content: space-between;
-  width: 60%;
-  margin: 2%;
+  width: 20%;
 }
 
 footer nav ul {
   display: flex;
-  justify-content: start;
-  margin: auto;
-  padding: auto;
+  justify-content: center;
 }
 
 .cornerstuffbl {
@@ -135,6 +137,7 @@ footer nav ul {
   font-weight: 500;
   transition: 0.5s;
 }
+
 .cornerstuffbl:hover{
   transform: scale(1.2);
   text-shadow: 0 0 5px palevioletred; 
@@ -170,7 +173,7 @@ footer nav ul {
 .arrowl:hover{
   border: 1px solid white;
   margin-bottom: 2%;
-  text-shadow: 0 0 5px palevioletred; 
+  text-shadow: 2px 0 5px palevioletred; 
 }
 
 .popelements{
@@ -178,7 +181,7 @@ footer nav ul {
 }
 .popelements:hover{
   transform: scale(1.2);
-  text-shadow: 0 0 5px palevioletred; 
+  text-shadow: 2px 0 5px palevioletred; 
 }
 
 .footer-menu {

@@ -1,0 +1,20 @@
+.floating-hero-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 10px;
+    margin-top: -15%;
+    margin-bottom: 0%;
+    z-index: -1;
+    padding-bottom: 0;
+    animation: zoomInOu 20s ease-in-out infinite alternate;
+  }
+/* @keyframes zoomInOu {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+} */
